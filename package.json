@@ -1,0 +1,21 @@
+{
+  "name": "microfrontend-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "host",
+      "libs",
+      "remote"
+    ]
+  },
+  "scripts": {
+    "start": "concurrently \"cd libs; yarn start\" \"cd remote; yarn start\" \"cd host; yarn start\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  }
+}
