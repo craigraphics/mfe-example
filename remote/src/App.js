@@ -1,7 +1,8 @@
 import React from 'react';
+import Login from './pages/Login';
 
 const App = () => {
-  return <main>remote</main>;
+  return <Login />;
 };
 
 export default App;
